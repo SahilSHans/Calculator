@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.element {
+    margin: 20px;
+}
+
+/* Variables */
+:root {
+    --primary-color: #50330C;
+    --accent-color: #68BA84;
+    --offwhite-color: #F8F8F8;
+    --white-color: #FFFFFF;
+    --text-color: #939393;
+    --font-main: 'Poppins', sans-serif;
+    --font-weight-light: 300;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+}
+
+/* Defualt */
+html{
+    font-size: 16px;
+}
+/* Button */
+/* .btn {
+    display: block;
+    padding: 25px 40px;
+    text-align: center;
+    min-width: 140px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: var(--font-weight-medium);
+    color: var(--white-color);
+    background: var(--accent-color);
+    transition: 0.4s all ease-in-out;
+} */
+@media (hover: hover) {
+    .btn:hover {
+        background: var(--primary-color);
+    }
+}
+
+/* .btn-wrap {
+    display: flex;
+    margin-top: 30px;
+} */
+
+/* Typography */
+body {
+    font-family: var(--font-main);
+}
+
+h1 {
+    font-size: 43px;
+    line-height: 51px;
+    letter-spacing: 0;
+    color: var(--primary-color);
+    font-weight: var(--font-weight-semibold);
+}
+
+h2 {
+    font-size: 33px;
+    line-height: 45px;
+    letter-spacing: 0;
+    color: var(--primary-color);
+    font-weight: var(--font-weight-semibold);
+}
+
+p {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0;
+    color: var(--text-color);
+    font-weight: var(--font-weight-light);
+}
+
+/* Responsive - Medium Tablet */
+@media only screen and (max-width: 991px) {
+    h1 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
+
+/* 3. Ready Classes */
+
+/* Flexbox Ready Classes */
+.flex {
+    display: flex;
+}
+.flex-sb {
+    justify-content: space-between;
+}
+.flex-ac {
+    align-items: center;
+}
+.flex-jc {
+    justify-content: center;
+}
+.flex-ae {
+    align-items: flex-end;
+}
+.flex-je {
+    justify-content: flex-end;
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+
+/* Width Ready Classes */
+
+/* 20% wide */
+.twenty {
+    width: 20%;
+}
+
+/* 25% wide */
+.twenty-five {
+    width: 25%;
+}
+
+/* 30% wide */
+.thirty {
+    width: 30%;
+}
+
+/* 35% wide */
+.thirty-five {
+    width: 35%;
+}
+
+/* 40% wide */
+.forty {
+    width: 40%;
+}
+
+/* Our Styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: repeat(7, 6em);
+    grid-gap: 0.6rem;
+    grid-template-areas:
+    "display display display display"
+    "display display display display"
+    "clear negative percent divide"
+    "seven eight nine multiply"
+    "four five six subtract"
+    "one two three add"
+    "zero zero decimal equal";
+}
+.grid-item-number-0{
+    grid-area: zero;
+}
+.grid-item-number-1{
+    grid-area: one;
+}
+.grid-item-number-2{
+    grid-area: two;
+}
+.grid-item-number-3{
+    grid-area: three;
+}
+.grid-item-number-4{
+    grid-area: four;
+}
+.grid-item-number-5{
+    grid-area: five;
+}
+.grid-item-number-6{
+    grid-area: six;
+}
+.grid-item-number-7{
+    grid-area: seven;
+}
+.grid-item-number-8{
+    grid-area: eight;
+}
+.grid-item-number-9{
+    grid-area: nine;
+}
+
+.grid-item-operation-equal{
+    grid-area: equal;
+}
+.grid-item-operation-add{
+    grid-area: add;
+}
+.grid-item-operation-subtract{
+    grid-area: subtract;
+}
+.grid-item-operation-divide{
+    grid-area: divide;
+}
+.grid-item-operation-multiply{
+    grid-area: multiply;
+}
+.grid-item-operation-negitive{
+    grid-area: negitive;
+}
+.grid-item-operation-percent{
+    grid-area: percent;
+}
+.grid-item-command-clear{
+    grid-area: clear;
+}
+.grid-item-display{
+    grid-area: display;
+}
+.btn-container button{
+    font-size: 2rem;
+    border-radius: 90% ;
+}
+/* #btn-zero{
+    border-left-radius: 35%;
+} */
